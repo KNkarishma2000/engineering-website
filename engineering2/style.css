@@ -1,0 +1,581 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.header{
+    border-bottom: 1px solid grey;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   padding:10px 0px;
+    box-sizing: border-box;
+   
+ }
+ 
+ header {
+ 
+   display: flex;
+   align-items: center;
+   /* padding: 10px; */
+ 
+   justify-content: space-evenly;
+   z-index: 1;
+ 
+ }
+ 
+ 
+ header ul li {
+     list-style: none;
+     position: relative;
+     float: left;
+     margin: 10px 16px;
+     padding: 10px 0px;
+     text-align: left;
+ }
+ .menu-bar a{
+     text-decoration: none;
+     color: white;
+ }
+
+ .dropdown-menu li {
+     margin: 0px;
+     width: 210px;
+     text-align: left;
+     display: block;
+     padding-left: 5px;
+ }
+ 
+
+
+ .hamburger-menu {
+     display: none;
+   }
+   #check{
+     display: none;
+   }
+ 
+ 
+   /* header Image */
+ 
+   .header-img {
+     margin-top: -150px;
+     background: url(./images/Untitled\ design\ \(2\).png) no-repeat center center/cover;
+     width: 100%;
+     height: 850px;
+ }
+ 
+ .header-content {
+     position: absolute;
+     top: 30%;
+     left: 35%;
+     max-width: 600px;
+     margin: auto;
+     text-align: center;
+ }
+ 
+ .header-content h1,
+ .header-content h6 {
+     opacity: 0;
+     animation: fadeIn 4.90s ease-out forwards;
+ }
+ 
+ .header-content h1 {
+     font-size: 60px;
+     padding: 20px 0px;
+     color: white;
+ }
+ 
+ .header-content h6 {
+     font-size: 20px;
+     font-weight: 100;
+     padding: 10px 0px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: white;
+ }
+ 
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-20px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ button{
+    padding:15px 40px;
+    color:white;
+    border:none;
+    background-color:#030F27;
+    cursor: pointer;
+ }
+
+
+ /* about Us */
+ .section{
+
+    margin:80px 0px;
+    padding:10px ;
+    
+  }
+  .container {
+    display: flex;
+    justify-content:space-evenly; /* Adjust as needed */
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .Construction-sec{
+    margin:20px 0px;
+    display:flex;
+   justify-content: space-between;
+  }
+  .image-section {
+    width: 40%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    flex-basis: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .image-section img {
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-section::before {
+    content: '';
+    width: 50%;
+    height: 84%;
+    background-color: #f5ad0d;
+    padding: 30px;
+    top: -5px;
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+  }
+  
+  .content-section {
+    width: 50%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+  
+  .content-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333; /* Adjust text color */
+  }
+  
+  .content-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555; /* Adjust text color */
+  }
+  
+  .button{
+    margin:30px 0px;
+    padding:15px 40px;
+    cursor: pointer;
+    color:#030f27;
+    background-color:transparent;
+    /* border: none; */
+    border:1px solid #030f27;
+    transition: 0.8s;
+ 
+    &:hover,&:focus{
+      background-color: #030f27;
+      border:none;
+      color:white;
+  
+    }
+  }
+  
+
+
+  /* whart we offer */
+
+   
+
+  .offer-section {
+    padding: 10px 0px;
+    max-width: 1200px;
+    margin:auto;
+    text-align: center;
+}
+
+.offer-section h2 {
+    font-size:40px;
+    color: #030f27;
+    padding: 15px 0px;
+}
+.offer-section p{
+    padding:20px 0px;
+    padding-top: 5px;
+    width:70%;
+    margin: auto;
+}
+.offer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.offer-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer-item:hover {
+    transform: scale(1.05);
+}
+
+.offer-item img {
+    width: 100%;
+    height:300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.offer-item h3 {
+    margin: 15px 0;
+    color: #030f27;
+}
+
+.offer-item p {
+    color: #555;
+    padding: 0 20px 20px;
+}
+
+
+/* industrial sector */
+.industrial-sectors {
+    padding: 50px;
+    text-align: center;
+    margin:auto;
+    max-width: 1200px;
+}
+
+.industrial-sectors h2 {
+    font-size:40px;
+    color: #030f27;
+    padding: 15px 0px;
+}
+
+.sector-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.sector-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sector-item:hover {
+    transform: scale(1.05);
+}
+
+.sector-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.sector-item h3 {
+    margin: 15px 0;
+    color: #030f27;
+}
+
+.sector-item p {
+    color: #555;
+    padding: 0 20px 20px;
+}
+
+/* industrial sector */
+
+/* services */
+.services-sec {
+    padding: 40px 0px;
+        z-index: 1;
+      }
+      .service{
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: -1;
+      }
+      .service h6{
+        color: #f5ad0d;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      .service h4{
+        font-size: 35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding:20px 0px;
+      }
+      .service p, .project-heading p{
+       color:#555;
+       font-size: 18px;
+       line-height: 30px;
+       padding:10px 0px;
+      }
+      .services {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap:10px;
+        padding:40px 0px;
+       justify-content: center;
+       
+      }
+      
+      .service-card {
+        width: 100%;
+        border:1px solid rgb(228, 226, 226);
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        z-index: 1;
+        overflow: hidden; 
+        padding:20px 0px;
+        max-width: 600px;
+        
+      }
+      .service-card:hover{
+        cursor: pointer;
+        border:1px solid #f5ad0d;
+      }
+    
+    
+      .card-content {
+        padding: 10px 10px;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    
+        transition: all 0.6s ease-in-out;
+      }
+      
+      .card-content h2 {
+        bottom:10px;
+        padding: 20px 0;
+        position: relative;
+        font-size: 20px;
+      }
+   .card{
+    text-align: center;
+   }
+      .card-content p {
+        line-height: 24px;
+        margin: 5px 0px;
+        width:90%;
+      }
+      
+   .icon img{
+    width:100%;
+    height:200px;
+   }
+     
+    
+      
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      
+      .read-more {
+        display: inline-block;
+        padding: 5px 0px;
+        background-color: transparent;
+        color: black;
+        text-decoration: none;
+        border-radius: 4px;
+        position: absolute;
+    margin-bottom: 20px;
+        bottom: 0;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+
+      /* customer suport 
+       */
+       .customer-service-section {
+        background-image: url(./images/Untitled\ design\ \(3\).png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: fixed;
+        background-attachment: fixed;
+     
+        padding:80px 0px;
+        margin:80px 0px;
+        /* padding: 50px; */
+     
+    }
+    .button1{
+        color:white;
+        border: 1px solid white;
+
+     
+    }
+    .customer-service-section h2 {
+        font-size:65px;
+        text-align: left;
+        color: white;
+        padding:30px 0px;
+    }
+    
+    .service-container {
+        display: flex;
+     max-width: 1300px;
+     margin: auto;
+    
+        
+    }
+    
+    .service-item {
+        width: 40%;
+        padding:40px 0px; /* Adjust width as needed */
+    }
+    .service-image{
+        width:60%;
+    }
+    .service-image img {
+        width:100%;
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+      
+    }
+    
+   
+    
+    .service-item h3 {
+        margin: 20px 0;
+        color: white;
+    }
+    
+    .service-item p {
+        color: white;
+        text-align: left;
+        font-size: 20px;
+        width:90%;
+    }
+
+    /* clients */
+.clients-section {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+  }
+  
+  .clients-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .clients-container h2 {
+    font-size:40px;
+    color: #030f27;
+    padding: 15px 0px;
+}
+  
+  .client-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.client-logos img {
+    max-width: 150px;
+    max-height: 80px;
+    object-fit: contain;
+    margin: 0 20px;
+  }
+
+
+
+  /* footer */
+  .site-footer {
+    background-color: #030f27;
+   
+    
+    position: relative;
+    padding:190px 0px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-section {
+    width: 30%;
+    max-width: 300px;
+}
+
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.logo-section p{
+    color:white;
+}
+.menu-section h4,
+.contact-section h4 {
+    padding:20px 0px;
+    font-size: 25px;
+    color: white;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-section li {
+    margin-bottom: 10px;
+}
+
+.menu-section a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-section a:hover {
+    color: white;
+}
+
+.contact-section p {
+    color: white;
+}
